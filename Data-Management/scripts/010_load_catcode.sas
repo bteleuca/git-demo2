@@ -1,6 +1,10 @@
 cas casauto;
 caslib _ALL_ assign;
 
+proc casutil incaslib="PUBLIC";
+	droptable casdata="&sysuserid._catcode" quiet;
+quit;
+
 * Create dimension;
 options dscas;
 data PUBLIC.&sysuserid._CATCODE (promote=yes);
