@@ -43,9 +43,7 @@ pipeline {
                 '''
             }
         }
-        stage('Load in CAS') {
-            parallel {
-                stage('Load Catalogue Code Dimension') {
+        stage('Load Catalogue Code Dimension') {
                     steps {
                     sh '''
                     #!/bin/bash -xe
