@@ -39,7 +39,7 @@ pipeline {
                 ./sas-viya --profile ${SAS_CLI_PROFILE} auth login -user $UserCredentials_USR -password $UserCredentials_PSW
                 # Execute SAS program in batch
                 cd /tmp/
-                /opt/sas/viya/home/bin/sas-viya --profile ${SAS_CLI_PROFILE} batch jobs submit-pgm --pgm-path /tmp/workspace/git-demo2/Data-Management/scripts/050_CASlib.sas --context default --watch-output --wait-log-list --results-dir /tmp
+                /opt/sas/viya/home/bin/sas-viya --profile ${SAS_CLI_PROFILE} batch jobs submit-pgm --pgm-path /tmp/workspace/git-demo2_main/Data-Management/scripts/050_CASlib.sas --context default --watch-output --wait-log-list --results-dir /tmp
                 '''
             }
         }
