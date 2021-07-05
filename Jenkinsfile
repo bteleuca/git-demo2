@@ -16,7 +16,6 @@ pipeline {
                 """
             }
         }
-    }
         stage('Create CASlib') {
             steps {
                 sh '''
@@ -44,7 +43,7 @@ pipeline {
                 '''
             }
         }
-    
+    }
     post {
         success {
             echo 'Test pipeline'
